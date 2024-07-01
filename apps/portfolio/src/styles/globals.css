@@ -36,7 +36,7 @@
   }
 
   .dark {
-    --background: hsl(240, 8%, 5%);
+    --background: #0c0c0e;
     --foreground: hsl(0 0% 98%);
 
     --card: hsl(0 0% 3.9%);
@@ -101,4 +101,10 @@
 .grain-effect {
   animation: grainEffect 2.5s steps(4) infinite;
   transform-style: preserve-3d;
+}
+
+
+.particle-mask {
+  aspect-ratio: auto 1192 / 220;
+  overflow-clip-margin: content-box;
 }

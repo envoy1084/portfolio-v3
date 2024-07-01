@@ -8,7 +8,7 @@ export const GrainEffect = () => {
         style={{
           backgroundImage: `url(/grain-texture.png)`,
           backgroundPosition: '0px 0px',
-          backgroundSize: '128px',
+          backgroundSize: '328px',
         }}
       />
     </div>
