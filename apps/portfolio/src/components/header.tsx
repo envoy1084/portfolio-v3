@@ -33,18 +33,20 @@ export const Header = () => {
 
   if (init) {
     return (
-      <div className='relative w-full max-w-5xl mx-auto my-[10rem]'>
-        <Image
-          alt='Header'
-          className='z-0 w-full'
-          src={HeaderImage as unknown as string}
-        />
-        <Particles
-          className='particle-mask absolute left-0 top-0 z-[-1] w-full overflow-clip'
-          id='tsparticles'
-          options={options}
-          particlesLoaded={particlesLoaded}
-        />
+      <div className='px-3 lg:px-0'>
+        <div className='relative mx-auto my-[10rem] w-full max-w-5xl'>
+          <Image
+            alt='Header'
+            className='z-0 w-full'
+            src={HeaderImage as unknown as string}
+          />
+          <Particles
+            className='particle-mask absolute left-0 top-0 z-[-1] w-full overflow-clip'
+            id='tsparticles'
+            options={options}
+            particlesLoaded={particlesLoaded}
+          />
+        </div>
       </div>
     );
   }
