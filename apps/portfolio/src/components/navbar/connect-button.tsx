@@ -23,7 +23,7 @@ export const ConnectButton = () => {
   const chains = useChains();
 
   const { open } = useWeb3Modal();
-  const { open: isOpen, selectedNetworkId } = useWeb3ModalState();
+  const { selectedNetworkId } = useWeb3ModalState();
 
   // Balance
   const { data: balance, status: balanceStatus } = useBalance({
@@ -32,10 +32,12 @@ export const ConnectButton = () => {
 
   // ENS
   const { data: ensName, status: ensNameStatus } = useEnsName({
+    chainId: 1,
     address,
   });
   const { data: ensAvatar, status: ensAvatarStatus } = useEnsAvatar({
     name: ensName ?? '',
+    chainId: 1,
     query: {
       enabled: ensName !== null,
       initialData: `https://api.dicebear.com/8.x/shapes/svg?seed=${address ?? ''}`,
@@ -66,20 +68,20 @@ export const ConnectButton = () => {
   if (!address) {
     return (
       <Button
-        className='rounded-full'
+        className='h-8 rounded-xl'
         onClick={() =>
           open({
             view: 'Connect',
           })
         }
       >
-        {isOpen ? 'Connecting...' : 'Connect'}
+        Connect
       </Button>
     );
   } else if (!chainIds.includes(activeChainId)) {
     return (
       <Button
-        className='rounded-full'
+        className='rounded-h-8 rounded-xl'
         onClick={() =>
           open({
             view: 'Networks',
@@ -121,7 +123,7 @@ export const ConnectButton = () => {
                 <Skeleton className='h-4 w-24' />
               )}
             </div>
-            <div className='text-xs font-medium text-neutral-600'>
+            <div className='text-xs font-medium text-neutral-600 dark:text-neutral-300'>
               {balanceStatus === 'success' ? (
                 <>
                   {formattedBalance} {currencySymbol}

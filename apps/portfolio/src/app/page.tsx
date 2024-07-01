@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { Header } from '~/components/header';
+import { City, Header } from '~/components';
 
 const Home = () => {
   return (
-    <div>
-      <div className='my-[10rem]'>
-        <Header />
-      </div>
+    <div className=''>
+      <Header />
+      <City />
     </div>
   );
 };

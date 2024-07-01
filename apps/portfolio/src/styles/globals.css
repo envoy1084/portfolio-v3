@@ -103,8 +103,15 @@
   transform-style: preserve-3d;
 }
 
-
 .particle-mask {
   aspect-ratio: auto 1192 / 220;
   overflow-clip-margin: content-box;
+}
+
+.city-glow {
+  background: rgba(255, 214, 68, 0.4);
+  box-shadow:
+    rgba(255, 214, 68, 0.4) 220px -29.8216px 240px,
+    rgba(255, 214, 68, 0.4) -220px -29.8216px 240px;
+  border-radius: 290px;
 }

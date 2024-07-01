@@ -33,7 +33,7 @@ export const Header = () => {
 
   if (init) {
     return (
-      <div className='relative w-full max-w-5xl mx-auto'>
+      <div className='relative w-full max-w-5xl mx-auto my-[10rem]'>
         <Image
           alt='Header'
           className='z-0 w-full'

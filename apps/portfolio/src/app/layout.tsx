@@ -5,6 +5,7 @@ import { wagmiConfig } from '~/lib/viem';
 
 import type { Metadata } from 'next';
 import { cookieToInitialState } from 'wagmi';
+import { Navbar } from '~/components';
 import { Web3Provider } from '~/providers';
 import '~/styles/globals.css';
 
@@ -36,9 +37,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
       <body
-        className={`overflow-hidden font-sans ${beatriceRegular.variable} ${elgocAlt.variable}`}
+        className={`flex flex-col font-sans ${beatriceRegular.variable} ${elgocAlt.variable}`}
       >
-        <Web3Provider initialState={initialState}>{children}</Web3Provider>
+        <Web3Provider initialState={initialState}>
+          <Navbar />
+          {children}
+        </Web3Provider>
         <Toaster />
         <GrainEffect />
       </body>
