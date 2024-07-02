@@ -17,6 +17,11 @@ const beatriceRegular = localFont({
   variable: '--font-beatrice-regular',
 });
 
+const beatriceMedium = localFont({
+  src: '../../public/beatrice-medium.woff2',
+  variable: '--font-beatrice-medium',
+});
+
 const elgocAlt = localFont({
   src: '../../public/elgocAlt-medium.woff2',
   variable: '--font-elgocAlt',
@@ -37,7 +42,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
       <body
-        className={`flex select-none flex-col font-sans ${beatriceRegular.variable} ${elgocAlt.variable}`}
+        className={`flex select-none flex-col font-sans ${beatriceRegular.variable} ${elgocAlt.variable} ${beatriceMedium.variable}`}
       >
         <Web3Provider initialState={initialState}>
           <SmoothScroll>

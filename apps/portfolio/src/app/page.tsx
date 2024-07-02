@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { City, Header } from '~/components';
+import { About, City, Header } from '~/components';
 
 const Home = () => {
   return (
     <div className=''>
       <Header />
       <City />
+      <About />
     </div>
   );
 };

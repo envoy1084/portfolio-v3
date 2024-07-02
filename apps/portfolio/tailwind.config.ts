@@ -20,6 +20,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-beatrice-regular)', 'Arial', 'sans-serif'],
+        beatriceMedium: ['var(--font-beatrice-medium)', 'Arial', 'sans-serif'],
         elgocAlt: ['var(--font-elgocAlt)', 'Arial', 'sans-serif'],
       },
       colors: {
