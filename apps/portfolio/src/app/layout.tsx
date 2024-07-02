@@ -42,7 +42,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
       <body
-        className={`font-sans ${beatriceRegular.variable} ${elgocAlt.variable} ${beatriceMedium.variable}`}
+        className={`overflow-x-hidden font-sans ${beatriceRegular.variable} ${elgocAlt.variable} ${beatriceMedium.variable}`}
       >
         <Web3Provider initialState={initialState}>
           <SmoothScroll>

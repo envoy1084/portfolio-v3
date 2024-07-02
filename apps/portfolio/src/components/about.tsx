@@ -22,15 +22,14 @@ export const About = () => {
   });
 
   return (
-    <div ref={ref} className='relative z-[2] h-[300vh]'>
+    <div ref={ref} className='relative z-[2] h-[200vh]'>
       <div className='sticky top-0 flex h-screen items-center justify-center'>
         <h2 className='w-full max-w-2xl select-text px-1 text-center font-beatriceMedium text-2xl leading-[1.5] sm:text-3xl'>
-          {' '}
-          <span className={cn(v < 0.25 ? 'text-neutral-800' : 'text-white')}>
+          <span className={cn(v < 0 ? 'text-neutral-800' : 'text-white')}>
             Hello! I am{' '}
             <span
               className={cn(
-                v < 0.25 ? 'opacity-20' : 'opacity-100',
+                v < 0 ? 'opacity-20' : 'opacity-100',
                 'text-blue-400'
               )}
             >
@@ -38,18 +37,18 @@ export const About = () => {
             </span>
             , a developer based in India.
           </span>{' '}
-          <span className={cn(v < 0.45 ? 'text-neutral-800' : 'text-white')}>
+          <span className={cn(v < 0.3 ? 'text-neutral-800' : 'text-white')}>
             I love to{' '}
-            <span className={cn(v < 0.45 ? 'opacity-20' : 'opacity-100')}>
+            <span className={cn(v < 0.3 ? 'opacity-20' : 'opacity-100')}>
               ⛵
             </span>{' '}
             ship awesome web3 projects.
           </span>{' '}
-          <span className={cn(v < 0.65 ? 'text-neutral-800' : 'text-white')}>
+          <span className={cn(v < 0.7 ? 'text-neutral-800' : 'text-white')}>
             In my free time, I like write technical blogs{' '}
             <span
               className={cn(
-                v < 0.65 ? 'text-neutral-800 opacity-20' : 'opacity-100'
+                v < 0.7 ? 'text-neutral-800 opacity-20' : 'opacity-100'
               )}
             >
               📝

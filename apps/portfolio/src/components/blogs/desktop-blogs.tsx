@@ -15,7 +15,7 @@ export const DesktopBlogs = ({ scrollProgress }: DesktopBlogsProps) => {
       <div
         className='flex flex-col gap-5'
         style={{
-          transform: `translateY(calc(-${String(scrollProgress)}px + 20vh))`,
+          transform: `translateY(calc(-${String(scrollProgress)}px + 10vh))`,
         }}
       >
         {Array(6)
@@ -35,7 +35,7 @@ export const DesktopBlogs = ({ scrollProgress }: DesktopBlogsProps) => {
       <div
         className='flex translate-y-[100%] flex-col gap-5'
         style={{
-          transform: `translateY(calc(${String(scrollProgress)}px - 200vh))`,
+          transform: `translateY(calc(${String(scrollProgress)}px - 150vh))`,
         }}
       >
         {Array(6)

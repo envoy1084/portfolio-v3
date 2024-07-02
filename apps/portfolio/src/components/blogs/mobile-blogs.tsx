@@ -16,7 +16,7 @@ export const MobileBlogs = ({ scrollProgress }: MobileBlogsProps) => {
       <div
         className='flex flex-col gap-8'
         style={{
-          transform: `translateY(calc(-${String(scrollProgress)}0px + 600px))`,
+          transform: `translateY(calc(-${String(scrollProgress)}0px + 200px))`,
         }}
       >
         {Array(6)
