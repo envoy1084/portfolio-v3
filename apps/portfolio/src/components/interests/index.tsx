@@ -25,7 +25,7 @@ export const Interests = () => {
   return (
     <div
       ref={ref}
-      className='flex min-h-[100dvh] flex-col items-center justify-start gap-[10rem]'
+      className='flex min-h-screen flex-col items-center justify-evenly gap-[10rem]'
     >
       <div className='relative'>
         <div className='text-center font-elgocAlt text-[4rem] leading-[0.9] sm:text-[6rem]'>
