@@ -25,14 +25,25 @@ export const About = () => {
   });
 
   return (
-    <div ref={ref} className='h-[300vh]'>
+    <div ref={ref} className='relative z-[2] h-[300vh]'>
       <div className='sticky top-0 flex h-screen items-center justify-center'>
-        <h2 className='font-beatriceMedium w-full max-w-2xl px-1 text-center text-2xl leading-[1.5] sm:text-3xl'>
-          Hello! I am <span className='font-bold text-blue-400'>Vedant</span>, a
-          developer based in India.{' '}
+        <h2 className='w-full max-w-2xl select-text px-1 text-center font-beatriceMedium text-2xl leading-[1.5] sm:text-3xl'>
+          {' '}
+          <span className={cn(v < 0.25 ? 'text-neutral-800' : 'text-white')}>
+            Hello! I am{' '}
+            <span
+              className={cn(
+                v < 0.25 ? 'opacity-20' : 'opacity-100',
+                'text-blue-400'
+              )}
+            >
+              Vedant
+            </span>
+            , a developer based in India.
+          </span>{' '}
           <span className={cn(v < 0.45 ? 'text-neutral-800' : 'text-white')}>
             I love to{' '}
-            <span className={cn(v < 0.45 ? 'opacity-40' : 'opacity-100')}>
+            <span className={cn(v < 0.45 ? 'opacity-20' : 'opacity-100')}>
               ⛵
             </span>{' '}
             ship awesome web3 projects.
@@ -41,7 +52,7 @@ export const About = () => {
             In my free time, I like write technical blogs{' '}
             <span
               className={cn(
-                v < 0.65 ? 'text-neutral-800 opacity-40' : 'opacity-100'
+                v < 0.65 ? 'text-neutral-800 opacity-20' : 'opacity-100'
               )}
             >
               📝

@@ -20,6 +20,6 @@
     "**/*.cjs",
     "**/*.js",
     ".next/types/**/*.ts"
-  ],
+, "src/components/blogs/index.tsx"  ],
   "exclude": ["node_modules"]
 }

@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      aspectRatio: {
+        portrait: '5 / 7',
+      },
       fontFamily: {
         sans: ['var(--font-beatrice-regular)', 'Arial', 'sans-serif'],
         beatriceMedium: ['var(--font-beatrice-medium)', 'Arial', 'sans-serif'],
