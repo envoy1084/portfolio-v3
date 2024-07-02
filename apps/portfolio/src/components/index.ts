@@ -6,3 +6,4 @@ export * from './text-copy';
 export * from './about';
 export * from './blogs';
 export * from './interests';
+export * from './projects';

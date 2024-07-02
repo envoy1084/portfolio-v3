@@ -2,10 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 
-import { useTrackerMotionValue } from '~/lib/hooks';
-
-import { useTracker } from '@14islands/r3f-scroll-rig';
-import { useTransform } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
 
 import { DesktopBlogs } from './desktop-blogs';
 import { MobileBlogs } from './mobile-blogs';
@@ -14,10 +11,9 @@ import { BlogTitle } from './title';
 export const Blogs = () => {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- safe to assume ref is not null
   const ref = useRef<HTMLDivElement>(null!);
-  const tracker = useTracker(ref);
-  const progress = useTrackerMotionValue(tracker);
+  const { scrollYProgress } = useScroll({ target: ref });
 
-  const value = useTransform(progress, [0, 1], [0, 1]);
+  const value = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const [scrollProgress, setScrollProgress] = useState(0);
 

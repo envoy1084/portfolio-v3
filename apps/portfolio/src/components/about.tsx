@@ -2,24 +2,21 @@
 
 import React, { useRef, useState } from 'react';
 
-import { useTrackerMotionValue } from '~/lib/hooks';
 import { cn } from '~/lib/utils';
 
-import { useTracker } from '@14islands/r3f-scroll-rig';
-import { useTransform } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
 
 export const About = () => {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- safe to assume ref is not null
   const ref = useRef<HTMLDivElement>(null!);
-  const tracker = useTracker(ref);
-  const progress = useTrackerMotionValue(tracker);
 
-  const value = useTransform(progress, [0, 1], [0, 1]);
+  const { scrollYProgress } = useScroll({ target: ref });
+
+  const value = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const [v, setV] = useState(0);
 
   value.on('change', (value) => {
-    // bring to range [0,1]
     const p = Number(value.toFixed(2));
     setV(p);
   });
