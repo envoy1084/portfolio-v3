@@ -20,15 +20,17 @@ const Items = ({ w = 0.7, gap = 0.15 }) => {
     <ScrollControls horizontal damping={0.1} pages={pages}>
       <Minimap />
       <Scroll>
-        {urls.map((url, i) => (
-          <Item
-            key={url}
-            index={i}
-            position={[i * xW, 0, 0]}
-            scale={[w, 4]}
-            url={url}
-          />
-        ))}
+        {urls.map((url, i) => {
+          return (
+            <Item
+              key={url}
+              index={i}
+              position={[i * xW, 0, 0]}
+              scale={[w, 4]}
+              url={url}
+            />
+          );
+        })}
       </Scroll>
     </ScrollControls>
   );

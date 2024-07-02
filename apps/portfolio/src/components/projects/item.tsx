@@ -23,7 +23,7 @@ const mesh = new THREE.Mesh<
 >();
 
 interface ItemMaterial extends THREE.Material {
-  scale: vec3;
+  scale: THREE.Vector2;
   color: THREE.Color;
 }
 
@@ -58,9 +58,8 @@ export const Item = ({ index, position, scale, ...props }: ItemProps) => {
       0.15,
       delta
     );
-
-    (ref.current.material as ItemMaterial).scale[0] = ref.current.scale.x;
-    (ref.current.material as ItemMaterial).scale[1] = ref.current.scale.y;
+    (ref.current.material as ItemMaterial).scale.x = ref.current.scale.x;
+    (ref.current.material as ItemMaterial).scale.y = ref.current.scale.y;
     if (active !== null && index < active)
       easing.damp(
         ref.current.position,

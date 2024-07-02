@@ -19,9 +19,7 @@ export const Interests = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   value.on('change', (value) => {
-    const p = value;
-    console.log(p);
-    setScrollProgress(p);
+    setScrollProgress(value);
   });
 
   return (
