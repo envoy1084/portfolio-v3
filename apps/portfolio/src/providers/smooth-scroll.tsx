@@ -2,14 +2,8 @@
 
 import React, { type PropsWithChildren } from 'react';
 
-import { GlobalCanvas, SmoothScrollbar } from '@14islands/r3f-scroll-rig';
+import { ReactLenis } from 'lenis/react';
 
 export const SmoothScroll = ({ children }: PropsWithChildren) => {
-  return (
-    <>
-      <GlobalCanvas />
-      <SmoothScrollbar />
-      {children}
-    </>
-  );
+  return <ReactLenis root>{children}</ReactLenis>;
 };

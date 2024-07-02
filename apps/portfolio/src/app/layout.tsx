@@ -6,7 +6,7 @@ import { wagmiConfig } from '~/lib/viem';
 import type { Metadata } from 'next';
 import { cookieToInitialState } from 'wagmi';
 import { Navbar } from '~/components';
-import { SmoothScrollFramer, Web3Provider } from '~/providers';
+import { SmoothScroll, Web3Provider } from '~/providers';
 import '~/styles/globals.css';
 
 import { GrainEffect } from '~/components/grain-effect';
@@ -45,10 +45,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         className={`font-sans ${beatriceRegular.variable} ${elgocAlt.variable} ${beatriceMedium.variable}`}
       >
         <Web3Provider initialState={initialState}>
-          {/* <SmoothScrollFramer> */}
-          <Navbar />
-          {children}
-          {/* </SmoothScrollFramer> */}
+          <SmoothScroll>
+            <Navbar />
+            {children}
+          </SmoothScroll>
         </Web3Provider>
         <Toaster />
         <GrainEffect />

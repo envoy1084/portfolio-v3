@@ -4,14 +4,16 @@ import Image from 'next/image';
 
 import { useEffect, useMemo, useState } from 'react';
 
-import { particles } from '~/lib/particles';
+import { getParticles } from '~/lib/particles';
 
 import { type Container } from '@tsparticles/engine';
 import { Particles, initParticlesEngine } from '@tsparticles/react';
 import HeaderImage from 'public/header.svg';
 import { loadFull } from 'tsparticles';
+import { useScreen } from 'usehooks-ts';
 
 export const Header = () => {
+  const { width } = useScreen();
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -29,7 +31,7 @@ export const Header = () => {
     await Promise.resolve(c);
   };
 
-  const options = useMemo(() => particles, []);
+  const options = useMemo(() => getParticles(width), [width]);
 
   if (init) {
     return (
