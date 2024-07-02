@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { About, Blogs, City, Header } from '~/components';
+import { About, Blogs, City, Header, Interests } from '~/components';
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Header />
       <City />
       <About />
+      <Interests />
       <Blogs />
       <div className='h-screen'></div>
     </div>

@@ -28,7 +28,7 @@ export const Blogs = () => {
     <div ref={ref} className='relative z-[2] min-h-[300dvh]'>
       <div className='sticky top-0 overflow-hidden md:h-screen'>
         <div className='flex h-full flex-col px-3 md:flex-row lg:flex-row'>
-          <BlogTitle />
+          <BlogTitle scrollProgress={scrollProgress} />
           <DesktopBlogs scrollProgress={scrollProgress} />
           <MobileBlogs scrollProgress={scrollProgress} />
         </div>
