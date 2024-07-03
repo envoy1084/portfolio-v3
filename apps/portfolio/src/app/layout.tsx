@@ -46,12 +46,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       >
         <Web3Provider initialState={initialState}>
           <SmoothScroll>
+            <GrainEffect />
             <Navbar />
             {children}
           </SmoothScroll>
         </Web3Provider>
         <Toaster />
-        <GrainEffect />
       </body>
     </html>
   );
