@@ -66,8 +66,8 @@ export const Projects = () => {
 
   return (
     <div ref={containerRef} className='h-[300vh]'>
-      <div className='sticky top-0 h-screen'>
-        <div className='relative flex h-full flex-col items-center justify-start gap-6'>
+      <div className='sticky top-0 h-screen border'>
+        <div className='relative flex h-full flex-col items-center justify-start gap-6 overflow-x-hidden'>
           <motion.div
             className='absolute left-0 top-0 h-full w-full'
             animate={{

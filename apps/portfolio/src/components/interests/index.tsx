@@ -25,7 +25,7 @@ export const Interests = () => {
   return (
     <div
       ref={ref}
-      className='flex h-screen flex-col items-center justify-evenly gap-[10rem]'
+      className='flex h-screen flex-col items-center justify-center gap-[10rem] overflow-x-clip sm:justify-evenly'
     >
       <div className='relative'>
         <div className='text-center font-elgocAlt text-[4rem] leading-[0.9] sm:text-[6rem]'>
@@ -33,7 +33,7 @@ export const Interests = () => {
           developer?
         </div>
         <ChatBubble
-          className='absolute -left-24 top-12 z-[4]'
+          className='absolute -left-2 top-12 z-[4] sm:-left-24'
           rotation={{ initial: -15, final: -20 }}
           scrollProgress={scrollProgress}
           text='Build decentralized applications'
