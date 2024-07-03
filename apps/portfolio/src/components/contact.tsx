@@ -4,11 +4,11 @@ import React from 'react';
 
 export const Contact = () => {
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center gap-2 text-center'>
+    <div className='flex min-h-[92dvh] flex-col items-center justify-center gap-2 text-center'>
       <div className='text-lg font-bold uppercase'>contact me</div>
       <Link
-        href='mailto:vedantchainani1084@gmail.com'
         className='font-elgocAlt text-[6rem]'
+        href='mailto:vedantchainani1084@gmail.com'
       >
         Email
       </Link>

@@ -5,6 +5,7 @@ import {
   Blogs,
   City,
   Contact,
+  Footer,
   Header,
   Interests,
   Projects,
@@ -22,6 +23,7 @@ const Home = () => {
       <Projects />
       <Resume />
       <Contact />
+      <Footer />
     </>
   );
 };

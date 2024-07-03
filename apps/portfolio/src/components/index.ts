@@ -9,3 +9,4 @@ export * from './interests';
 export * from './projects';
 export * from './resume';
 export * from './contact';
+export * from './footer';
