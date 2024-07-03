@@ -7,3 +7,5 @@ export * from './about';
 export * from './blogs';
 export * from './interests';
 export * from './projects';
+export * from './resume';
+export * from './contact';

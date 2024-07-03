@@ -1,6 +1,15 @@
 import React from 'react';
 
-import { About, Blogs, City, Header, Interests, Projects } from '~/components';
+import {
+  About,
+  Blogs,
+  City,
+  Contact,
+  Header,
+  Interests,
+  Projects,
+  Resume,
+} from '~/components';
 
 const Home = () => {
   return (
@@ -11,6 +20,8 @@ const Home = () => {
       <Interests />
       <Blogs />
       <Projects />
+      <Resume />
+      <Contact />
     </>
   );
 };
