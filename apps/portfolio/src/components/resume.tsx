@@ -2,16 +2,12 @@ import Link from 'next/link';
 
 import React from 'react';
 
+import { data } from '~/lib/data';
+
 export const Resume = () => {
   return (
-    <div className='flex h-screen flex-col items-center justify-evenly'>
-      <p className='max-w-xl whitespace-pre-line'>
-        {`Long story short, I'm currently looking for a new project where I could step in on many different levels : content, social media, digital communication, design, and more!
-
-You'd like to work with someone who's passionate, experienced, polyvalent, constantly learning, and who knows the internet like the back of his hand? 👋
-
-So here's a little recap of everything you've seen in A4:`}
-      </p>
+    <div className='flex h-screen flex-col items-center justify-evenly gap-24'>
+      <p className='max-w-xl whitespace-pre-line text-center sm:text-start'>{data.resume.description}</p>
 
       <div className='group relative aspect-video w-full max-w-2xl overflow-hidden border'>
         <div
@@ -20,30 +16,29 @@ So here's a little recap of everything you've seen in A4:`}
             backgroundImage: 'url(/paper-texture.jpg)',
           }}
         >
-          <div className='flex flex-row items-center justify-between px-12 py-8 text-sm font-semibold text-blue-500'>
-            <div>Resume 2024</div>
-            <Link href='https://envoy1084.xyz'>envoy1084.xyz</Link>
+          <div className='flex flex-row items-center justify-between px-6 py-4 text-sm font-semibold text-blue-500 md:px-12 md:py-8'>
+            <div>Resume {new Date(Date.now()).getFullYear()}</div>
+            <Link href={data.resume.website}>
+              {data.resume.website.replace('https://', '')}
+            </Link>
           </div>
-          <div className='py-12 text-center font-elgocAlt text-[4rem] font-medium leading-[0.9] text-blue-500'>
-            Vedant Chainani
+          <div className='py-12 text-center font-elgocAlt text-[2rem] font-medium leading-[0.9] text-blue-500 md:text-[4rem]'>
+            {data.resume.name}
             <br />
-            <span className='text-[4rem] font-semibold'>
-              Fullstack Developer
+            <span className='text-[2rem] font-semibold md:text-[4rem]'>
+              {data.resume.position}
             </span>
             <div className='flex flex-col items-center justify-center py-4 text-center font-sans'>
-              <Link
-                className='text-[9px]'
-                href='mailto:vedantchainani1084@gmail.com'
-              >
-                vedantchainani1084@gmail.com
+              <Link className='text-[9px]' href={`mailto:${data.resume.email}`}>
+                {data.resume.email}
               </Link>
             </div>
           </div>
         </div>
         <Link
           download
-          className='absolute bottom-12 right-1/2 translate-x-1/2 text-lg uppercase text-white opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100'
-          href=''
+          className='absolute bottom-0 md:bottom-12 right-1/2 translate-x-1/2 text-xs md:text-lg uppercase text-white opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100'
+          href={data.resume.downloadLink}
         >
           Download My Resume
         </Link>

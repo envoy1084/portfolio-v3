@@ -12,14 +12,16 @@ import {
   useTransform,
 } from 'framer-motion';
 
+import { type Project } from '.';
+
 const easeInOutQuint = cubicBezier(0.12, 0, 0.39, 0);
 
-interface ProjectItemProps {
+interface ProjectItemProps extends Project {
   index: number;
   scrollYProgress: MotionValue<number>;
 }
 
-export const ProjectItem = ({ index, scrollYProgress }: ProjectItemProps) => {
+export const ProjectItem = ({ index, scrollYProgress ,image}: ProjectItemProps) => {
   const { active, setActive } = useProjectsStore();
 
   const ONE_DIV = 1 / 12;
@@ -118,7 +120,7 @@ export const ProjectItem = ({ index, scrollYProgress }: ProjectItemProps) => {
         alt={`Image ${String(imageIndex)}`}
         className='h-full w-full object-cover'
         height={600}
-        src={`/images/${String(imageIndex)}.jpg`}
+        src={image}
         width={600}
       />
     </motion.div>

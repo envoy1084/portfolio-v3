@@ -2,6 +2,7 @@
 
 import React, { type ComponentProps, useRef, useState } from 'react';
 
+import { data } from '~/lib/data';
 import { cn } from '~/lib/utils';
 
 import { useScroll, useTransform } from 'framer-motion';
@@ -9,6 +10,8 @@ import { useScroll, useTransform } from 'framer-motion';
 export const Interests = () => {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- safe to assume ref is not null
   const ref = useRef<HTMLDivElement>(null!);
+
+  const [chat1, chat2, chat3, chat4, chat5] = data.interests.interests;
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -29,14 +32,13 @@ export const Interests = () => {
     >
       <div className='relative'>
         <div className='text-center font-elgocAlt text-[4rem] leading-[0.9] sm:text-[6rem]'>
-          *what do <br />I do as a<br /> web3 <br />
-          developer?
+          {data.interests.title}
         </div>
         <ChatBubble
           className='absolute -left-2 top-12 z-[4] sm:-left-24'
           rotation={{ initial: -15, final: -20 }}
           scrollProgress={scrollProgress}
-          text='Build decentralized applications'
+          text={chat1}
           transform={{
             x: {
               direction: 'left',
@@ -52,7 +54,7 @@ export const Interests = () => {
           className='absolute -left-24 bottom-12 z-[4]'
           rotation={{ initial: -15, final: 10 }}
           scrollProgress={scrollProgress}
-          text='Explore various protocols'
+          text={chat2}
           transform={{
             x: {
               direction: 'left',
@@ -68,7 +70,7 @@ export const Interests = () => {
           className='absolute -right-24 top-4 z-[4]'
           rotation={{ initial: 5, final: 40 }}
           scrollProgress={scrollProgress}
-          text='Participate in hackathons'
+          text={chat3}
           transform={{
             x: {
               direction: 'left',
@@ -84,7 +86,7 @@ export const Interests = () => {
           className='absolute -right-24 top-[40%] z-[4]'
           rotation={{ initial: 5, final: -60 }}
           scrollProgress={scrollProgress}
-          text='Meet other developers'
+          text={chat4}
           transform={{
             x: {
               direction: 'right',
@@ -100,7 +102,7 @@ export const Interests = () => {
           className='absolute bottom-0 left-1/3 z-[4]'
           rotation={{ initial: 0, final: 60 }}
           scrollProgress={scrollProgress}
-          text='Go to IRL events'
+          text={chat5}
           transform={{
             x: {
               direction: 'right',
@@ -113,12 +115,8 @@ export const Interests = () => {
           }}
         />
       </div>
-      <p className='max-w-lg whitespace-pre-line px-3 text-sm sm:text-base'>
-        {`
-          I started my journey as a web3 developer in 2020. I've been building decentralized applications, exploring various protocols, participating in hackathons, meeting other developers, and going to IRL events.
-
-          I'm currently working on a Battleship Game on Nillion Network which uses Secure MPC Computation to ensure that the game is fair and secure.
-        `}
+      <p className='max-w-lg whitespace-pre-line px-3 text-center text-sm sm:text-start sm:text-base'>
+        {data.interests.description}
       </p>
     </div>
   );
