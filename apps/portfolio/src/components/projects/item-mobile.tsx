@@ -19,7 +19,10 @@ interface ProjectItemProps {
   scrollYProgress: MotionValue<number>;
 }
 
-export const ProjectItem = ({ index, scrollYProgress }: ProjectItemProps) => {
+export const ProjectItemMobile = ({
+  index,
+  scrollYProgress,
+}: ProjectItemProps) => {
   const { active, setActive } = useProjectsStore();
 
   const ONE_DIV = 1 / 12;
@@ -27,7 +30,7 @@ export const ProjectItem = ({ index, scrollYProgress }: ProjectItemProps) => {
   const height = useTransform(
     scrollYProgress,
     [ONE_DIV * (index - 3), ONE_DIV * (index + 1), ONE_DIV * (index + 5)],
-    [500, 600, 500],
+    [300, 400, 300],
     { ease: easeInOutQuint }
   );
 
@@ -90,10 +93,10 @@ export const ProjectItem = ({ index, scrollYProgress }: ProjectItemProps) => {
   return (
     <motion.div
       key={`project-${String(index)}`}
-      className='hidden w-[6rem] md:block'
+      className='block w-[4rem] md:hidden'
       animate={{
-        width: active === index ? '64rem' : '6rem',
-        paddingInline: active === index ? '4rem' : '0',
+        width: active === index ? '20rem' : '4rem',
+        paddingInline: active === index ? '1rem' : '0',
         rotateX: active === index ? 0 : undefined,
         rotateY: active === index ? 0 : undefined,
         filter: active === index ? 'grayscale(0%)' : undefined,

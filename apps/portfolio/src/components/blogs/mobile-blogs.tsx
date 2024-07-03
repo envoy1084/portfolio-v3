@@ -4,21 +4,12 @@ import React from 'react';
 
 /* eslint-disable @next/next/no-img-element -- test */
 
-interface MobileBlogsProps {
-  scrollProgress: number;
-}
-
-export const MobileBlogs = ({ scrollProgress }: MobileBlogsProps) => {
+export const MobileBlogs = () => {
   return (
     <div className='relative flex w-full basis-full flex-row justify-center gap-12 md:hidden lg:basis-3/5'>
       <div className='carousel-grad carousel-grad-top z-[4]' />
       <div className='carousel-grad carousel-grad-bottom z-[4]' />
-      <div
-        className='flex flex-col gap-8'
-        style={{
-          transform: `translateY(calc(-${String(scrollProgress)}0px + 200px))`,
-        }}
-      >
+      <div className='flex flex-col gap-8'>
         {Array(6)
           .fill(true)
           .map((_, i) => {
