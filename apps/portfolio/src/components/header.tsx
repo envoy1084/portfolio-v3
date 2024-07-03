@@ -13,7 +13,7 @@ import { loadFull } from 'tsparticles';
 import { useScreen } from 'usehooks-ts';
 
 export const Header = () => {
-  const { width } = useScreen();
+  const screen = useScreen();
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -31,9 +31,14 @@ export const Header = () => {
     await Promise.resolve(c);
   };
 
-  const options = useMemo(() => getParticles(width), [width]);
+  const options = useMemo(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- can be undefined
+    if (screen) {
+      return getParticles(screen.width);
+    }
+  }, [screen]);
 
-  if (init) {
+  if (init && options) {
     return (
       <div className='px-3 lg:px-0'>
         <div className='relative mx-auto my-[10rem] w-full max-w-5xl'>
