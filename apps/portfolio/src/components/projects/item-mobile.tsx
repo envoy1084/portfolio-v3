@@ -14,7 +14,7 @@ import {
 
 import { type Project } from '.';
 
-const easeInOutQuint = cubicBezier(0.12, 0, 0.39, 0);
+const easeSine = cubicBezier(0.12, 0, 0.39, 0);
 
 interface ProjectItemProps extends Project {
   index: number;
@@ -34,7 +34,7 @@ export const ProjectItemMobile = ({
     scrollYProgress,
     [ONE_DIV * (index - 3), ONE_DIV * (index + 1), ONE_DIV * (index + 5)],
     [300, 400, 300],
-    { ease: easeInOutQuint }
+    { ease: easeSine }
   );
 
   const rotateY = useTransform(
@@ -47,7 +47,7 @@ export const ProjectItemMobile = ({
       ONE_DIV * (index + 5),
     ],
     [0, 20, 0, -20, 0],
-    { ease: easeInOutQuint }
+    { ease: easeSine }
   );
   const rotateX = useTransform(
     scrollYProgress,
@@ -59,7 +59,7 @@ export const ProjectItemMobile = ({
       ONE_DIV * (index + 5),
     ],
     [0, 5, 0, 5, 0],
-    { ease: easeInOutQuint }
+    { ease: easeSine }
   );
   const scaleX = useTransform(
     scrollYProgress,
