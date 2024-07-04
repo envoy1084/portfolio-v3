@@ -10,6 +10,7 @@ export const City = () => {
       <div className='city-glow absolute top-16 h-12 w-full translate-y-1/2 border-4 border-white' />
       <div className='overflow-hidden'>
         <Image
+          priority
           alt='city'
           className='translate-y-1/5 min-w-[1900px]'
           src={CityImage}
