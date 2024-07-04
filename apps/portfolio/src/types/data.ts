@@ -30,9 +30,12 @@ export interface Data {
       title: string;
       description: string;
       image: StaticImageData | string;
-      link: string;
+      coverImage: StaticImageData | string;
       backgroundColor: string;
       color: string;
+      liveLink?: string;
+      githubLink?: string;
+      videoDemo?: string;
     }[];
   };
   resume: {

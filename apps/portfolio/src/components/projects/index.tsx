@@ -31,7 +31,7 @@ export const Projects = () => {
   return (
     <div ref={containerRef} className='h-[300vh]'>
       <div className='sticky top-0 h-screen'>
-        <div className='relative flex h-full flex-col items-center justify-center gap-12 overflow-x-hidden'>
+        <div className='relative flex h-full flex-col items-center justify-center gap-12 overflow-x-hidden sm:gap-24'>
           <ProjectDetails />
           <div className='font-elgocAlt text-[4rem] md:text-[8rem]'>
             Projects
@@ -43,22 +43,20 @@ export const Projects = () => {
               transform: translateX,
             }}
           >
-            {projects.map((project, i) => {
+            {projects.toReversed().map((project, i) => {
               return (
-                <>
+                <div key={project.title}>
                   <ProjectItem
-                    key={`i-${String(i)}`}
                     index={i}
                     scrollYProgress={scrollYProgress}
                     {...project}
                   />
                   <ProjectItemMobile
-                    key={`i-${String(i)}`}
                     index={i}
                     scrollYProgress={scrollYProgress}
                     {...project}
                   />
-                </>
+                </div>
               );
             })}
           </motion.div>
