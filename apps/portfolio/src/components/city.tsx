@@ -14,6 +14,10 @@ export const City = () => {
           alt='city'
           className='translate-y-1/5 min-w-[1900px]'
           src={CityImage}
+          placeholder={
+            (CityImage.blurDataURL as `data:image/${string}` | undefined) ??
+            'blur'
+          }
           style={{
             maskImage: 'url(/city-mask.svg)',
             maskSize: '100% 100%',

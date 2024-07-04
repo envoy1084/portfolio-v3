@@ -41,7 +41,7 @@ export const Header = () => {
   if (init && options) {
     return (
       <div className='px-3 lg:px-0'>
-        <div className='relative mx-auto my-[10rem] w-full max-w-5xl'>
+        <div className='relative mx-auto my-[10rem] h-[112px] w-full max-w-5xl'>
           <Image
             alt='Header'
             className='z-0 w-full'
