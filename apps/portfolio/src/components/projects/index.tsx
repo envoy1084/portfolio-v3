@@ -29,7 +29,7 @@ export const Projects = () => {
   const translateX = useMotionTemplate`translateX(${innerScroll})`;
 
   return (
-    <div ref={containerRef} className='h-[300vh]'>
+    <div ref={containerRef} className='h-[300vh]' id='projects'>
       <div className='sticky top-0 h-screen'>
         <div className='relative flex h-full flex-col items-center justify-center gap-12 overflow-x-hidden sm:gap-24'>
           <ProjectDetails />

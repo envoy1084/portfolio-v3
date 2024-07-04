@@ -1,12 +1,8 @@
 import localFont from 'next/font/local';
-import { headers } from 'next/headers';
-
-import { wagmiConfig } from '~/lib/viem';
 
 import type { Metadata } from 'next';
-import { cookieToInitialState } from 'wagmi';
 import { Navbar } from '~/components';
-import { SmoothScroll, Web3Provider } from '~/providers';
+import { QueryProvider, SmoothScroll } from '~/providers';
 import '~/styles/globals.css';
 
 import { GrainEffect } from '~/components/grain-effect';
@@ -34,24 +30,19 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
-  const initialState = cookieToInitialState(
-    wagmiConfig,
-    headers().get('cookie')
-  );
-
   return (
     <html lang='en'>
       <body
         className={`!overflow-x-hidden font-sans ${beatriceRegular.variable} ${elgocAlt.variable} ${beatriceMedium.variable}`}
       >
-        <Web3Provider initialState={initialState}>
+        <QueryProvider>
           <SmoothScroll>
             <GrainEffect />
             <Navbar />
             {children}
           </SmoothScroll>
-        </Web3Provider>
-        <Toaster />
+          <Toaster />
+        </QueryProvider>
       </body>
     </html>
   );

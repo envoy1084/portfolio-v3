@@ -67,7 +67,7 @@ export const About = () => {
   });
 
   return (
-    <div ref={ref} className='relative z-[2] h-[200vh]'>
+    <div ref={ref} className='relative z-[2] h-[200vh]' id='about'>
       <div className='sticky top-0 flex h-screen items-center justify-center'>
         <h2 className='w-full max-w-2xl select-text px-1 text-center font-beatriceMedium text-2xl leading-[1.5] sm:text-3xl'>
           {data.about.map((sentence, i) => (

@@ -29,6 +29,7 @@ export const Interests = () => {
     <div
       ref={ref}
       className='flex h-screen flex-col items-center justify-center gap-[10rem] overflow-x-clip sm:justify-evenly'
+      id='interests'
     >
       <div className='relative'>
         <div className='text-center font-elgocAlt text-[4rem] leading-[0.9] sm:text-[6rem]'>

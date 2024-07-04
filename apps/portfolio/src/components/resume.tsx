@@ -6,7 +6,10 @@ import { data } from '~/lib/data';
 
 export const Resume = () => {
   return (
-    <div className='flex h-screen flex-col items-center justify-evenly gap-24 px-3 sm:px-0'>
+    <div
+      className='flex h-screen flex-col items-center justify-evenly gap-24 px-3 sm:px-0'
+      id='resume'
+    >
       <p className='max-w-xl whitespace-pre-line text-center sm:text-start'>
         {data.resume.description}
       </p>

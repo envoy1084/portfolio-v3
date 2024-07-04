@@ -159,7 +159,7 @@ importers:
         version: 9.108.1(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
       '@react-three/fiber':
         specifier: ^8.16.8
-        version: 8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
+        version: 8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
       '@t3-oss/env-nextjs':
         specifier: ^0.10.1
         version: 0.10.1(typescript@5.4.5)(zod@3.23.8)
@@ -181,15 +181,9 @@ importers:
       '@types/three':
         specifier: ^0.166.0
         version: 0.166.0
-      '@web3modal/wagmi':
-        specifier: ^4.2.3
-        version: 4.2.3(@types/react@18.3.3)(@wagmi/connectors@5.0.7)(@wagmi/core@2.10.5)(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)(viem@2.13.6)
       babel-plugin-react-compiler:
         specifier: 0.0.0-experimental-938cd9a-20240601
         version: 0.0.0-experimental-938cd9a-20240601
-      bignumber.js:
-        specifier: ^9.1.2
-        version: 9.1.2
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -199,9 +193,6 @@ importers:
       framer-motion:
         specifier: ^11.2.12
         version: 11.2.12(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)
-      geist:
-        specifier: ^1.3.0
-        version: 1.3.0(next@15.0.0-rc.0)
       lenis:
         specifier: ^1.1.5
         version: 1.1.5(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)
@@ -241,12 +232,6 @@ importers:
       usehooks-ts:
         specifier: ^3.1.0
         version: 3.1.0(react@19.0.0-rc-9c6806964f-20240703)
-      viem:
-        specifier: ^2.13.6
-        version: 2.13.6(typescript@5.4.5)(zod@3.23.8)
-      wagmi:
-        specifier: ^2.9.8
-        version: 2.9.8(@tanstack/query-core@5.40.0)(@tanstack/react-query@5.40.1)(@types/react@18.3.3)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -2620,30 +2605,6 @@ packages:
       react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
     dev: false
 
-  /@metamask/sdk-install-modal-web@0.20.2(i18next@22.5.1)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-0QiaZhV15AGdN1zU2jfTI32eC3YkwEpzDfR9+oiZ9bd2G72c6lYBhTsmDGUd01aP6A+bqJR5PjI8Wh2AWtoLeA==}
-    peerDependencies:
-      i18next: 22.5.1
-      react: ^18.2.0
-      react-dom: ^18.2.0
-      react-i18next: ^13.2.2
-      react-native: '*'
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
-    dependencies:
-      i18next: 22.5.1
-      qr-code-styling: 1.6.0-rc.1
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-dom: 19.0.0-rc-9c6806964f-20240703(react@19.0.0-rc-9c6806964f-20240703)
-      react-i18next: 13.5.0(i18next@22.5.1)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)
-      react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-    dev: false
-
   /@metamask/sdk@0.20.3(react-dom@19.0.0-rc-935180c7e0-20240524)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-935180c7e0-20240524):
     resolution: {integrity: sha512-HZ9NwA+LxiXzuy0YWbWsuD4xejQtp85bhcCAf8UgpA/0dOyF3RS4dKDdBBXSyRgk3RWPjeJgHxioaH4CmBmiRA==}
     peerDependencies:
@@ -2674,51 +2635,6 @@ packages:
       react: 19.0.0-rc-935180c7e0-20240524
       react-dom: 19.0.0-rc-935180c7e0-20240524(react@19.0.0-rc-935180c7e0-20240524)
       react-native-webview: 11.26.1(react-native@0.74.2)(react@19.0.0-rc-935180c7e0-20240524)
-      readable-stream: 3.6.2
-      rollup-plugin-visualizer: 5.12.0
-      socket.io-client: 4.7.5
-      util: 0.12.5
-      uuid: 8.3.2
-    transitivePeerDependencies:
-      - bufferutil
-      - encoding
-      - react-i18next
-      - react-native
-      - rollup
-      - supports-color
-      - utf-8-validate
-    dev: false
-
-  /@metamask/sdk@0.20.3(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-HZ9NwA+LxiXzuy0YWbWsuD4xejQtp85bhcCAf8UgpA/0dOyF3RS4dKDdBBXSyRgk3RWPjeJgHxioaH4CmBmiRA==}
-    peerDependencies:
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@metamask/onboarding': 1.0.1
-      '@metamask/providers': 15.0.0
-      '@metamask/sdk-communication-layer': 0.20.2(cross-fetch@4.0.0)(eciesjs@0.3.18)(eventemitter2@6.4.9)(readable-stream@3.6.2)(socket.io-client@4.7.5)
-      '@metamask/sdk-install-modal-web': 0.20.2(i18next@22.5.1)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)
-      '@types/dom-screen-wake-lock': 1.0.3
-      bowser: 2.11.0
-      cross-fetch: 4.0.0
-      debug: 4.3.5
-      eciesjs: 0.3.18
-      eth-rpc-errors: 4.0.3
-      eventemitter2: 6.4.9
-      i18next: 22.5.1
-      i18next-browser-languagedetector: 7.1.0
-      obj-multiplex: 1.0.0
-      pump: 3.0.0
-      qrcode-terminal-nooctal: 0.12.1
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-dom: 19.0.0-rc-9c6806964f-20240703(react@19.0.0-rc-9c6806964f-20240703)
-      react-native-webview: 11.26.1(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)
       readable-stream: 3.6.2
       rollup-plugin-visualizer: 5.12.0
       socket.io-client: 4.7.5
@@ -4059,24 +3975,6 @@ packages:
       react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
     dev: false
 
-  /@react-native/virtualized-lists@0.74.84(@types/react@18.3.3)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-XcV+qdqt2WihaY4iRm/M1FdSy+18lecU9mRXNmy9YK8g9Th/8XbNtmmKI0qWBx3KxyuXMH/zd0ps05YTrX16kw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@types/react': ^18.2.6
-      react: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 18.3.3
-      invariant: 2.2.4
-      nullthrows: 1.1.1
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-    dev: false
-
   /@react-spring/animated@9.6.1(react@19.0.0-rc-9c6806964f-20240703):
     resolution: {integrity: sha512-ls/rJBrAqiAYozjLo5EPPLLOb1LM0lNVQcXODTC1SMtS6DbuBCPaKco5svFUQFMP2dso3O+qcC4k9FsKc0KxMQ==}
     peerDependencies:
@@ -4124,7 +4022,7 @@ packages:
       '@react-spring/core': 9.6.1(react@19.0.0-rc-9c6806964f-20240703)
       '@react-spring/shared': 9.6.1(react@19.0.0-rc-9c6806964f-20240703)
       '@react-spring/types': 9.6.1
-      '@react-three/fiber': 8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
+      '@react-three/fiber': 8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
       react: 19.0.0-rc-9c6806964f-20240703
       three: 0.166.0
     dev: false
@@ -4148,7 +4046,7 @@ packages:
       '@mediapipe/tasks-vision': 0.10.8
       '@monogrid/gainmap-js': 3.0.5(three@0.166.0)
       '@react-spring/three': 9.6.1(@react-three/fiber@8.16.8)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
-      '@react-three/fiber': 8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
+      '@react-three/fiber': 8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0)
       '@use-gesture/react': 10.3.1(react@19.0.0-rc-9c6806964f-20240703)
       camera-controls: 2.8.5(three@0.166.0)
       cross-env: 7.0.3
@@ -4177,7 +4075,7 @@ packages:
       - immer
     dev: false
 
-  /@react-three/fiber@8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0):
+  /@react-three/fiber@8.16.8(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)(three@0.166.0):
     resolution: {integrity: sha512-Lc8fjATtvQEfSd8d5iKdbpHtRm/aPMeFj7jQvp6TNHfpo8IQTW3wwcE1ZMrGGoUH+w2mnyS+0MK1NLPLnuzGkQ==}
     peerDependencies:
       expo: '>=43.0'
@@ -4210,7 +4108,6 @@ packages:
       its-fine: 1.2.5(react@19.0.0-rc-9c6806964f-20240703)
       react: 19.0.0-rc-9c6806964f-20240703
       react-dom: 19.0.0-rc-9c6806964f-20240703(react@19.0.0-rc-9c6806964f-20240703)
-      react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
       react-reconciler: 0.27.0(react@19.0.0-rc-9c6806964f-20240703)
       react-use-measure: 2.1.1(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)
       scheduler: 0.21.0
@@ -5527,54 +5424,6 @@ packages:
       - zod
     dev: false
 
-  /@wagmi/connectors@5.0.7(@types/react@18.3.3)(@wagmi/core@2.10.5)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8):
-    resolution: {integrity: sha512-EoTtRKnUPhKpU/LFU7LU4iK8yNU/akU5vSgX+K21QXHi8ImhEEsd2nPEU5kfkWriGf+D/raD4gLZYsfppDRUaw==}
-    peerDependencies:
-      '@wagmi/core': 2.10.5
-      typescript: '>=5.0.4'
-      viem: 2.x
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@coinbase/wallet-sdk': 4.0.2
-      '@metamask/sdk': 0.20.3(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)
-      '@safe-global/safe-apps-provider': 0.18.1(typescript@5.4.5)(zod@3.23.8)
-      '@safe-global/safe-apps-sdk': 8.1.0(typescript@5.4.5)(zod@3.23.8)
-      '@wagmi/core': 2.10.5(@tanstack/query-core@5.40.0)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8)
-      '@walletconnect/ethereum-provider': 2.13.0(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@walletconnect/modal': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      cbw-sdk: /@coinbase/wallet-sdk@3.9.3
-      typescript: 5.4.5
-      viem: 2.13.6(typescript@5.4.5)(zod@3.23.8)
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - bufferutil
-      - encoding
-      - ioredis
-      - react
-      - react-dom
-      - react-i18next
-      - react-native
-      - rollup
-      - supports-color
-      - uWebSockets.js
-      - utf-8-validate
-      - zod
-    dev: false
-
   /@wagmi/core@2.10.5(@tanstack/query-core@5.40.0)(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8):
     resolution: {integrity: sha512-BvqFEdJTTepOKtPnacq7oE8gUZ4llzdxmPSBEYePArd1dvP/e5gwwfS5/8VBcvDvGcoX4N0lw5A4NNOJKL0Q+A==}
     peerDependencies:
@@ -5593,33 +5442,6 @@ packages:
       typescript: 5.4.5
       viem: 2.13.6(typescript@5.4.5)(zod@3.23.8)
       zustand: 4.4.1(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-    transitivePeerDependencies:
-      - '@types/react'
-      - bufferutil
-      - immer
-      - react
-      - utf-8-validate
-      - zod
-    dev: false
-
-  /@wagmi/core@2.10.5(@tanstack/query-core@5.40.0)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8):
-    resolution: {integrity: sha512-BvqFEdJTTepOKtPnacq7oE8gUZ4llzdxmPSBEYePArd1dvP/e5gwwfS5/8VBcvDvGcoX4N0lw5A4NNOJKL0Q+A==}
-    peerDependencies:
-      '@tanstack/query-core': '>=5.0.0'
-      typescript: '>=5.0.4'
-      viem: 2.x
-    peerDependenciesMeta:
-      '@tanstack/query-core':
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@tanstack/query-core': 5.40.0
-      eventemitter3: 5.0.1
-      mipd: 0.0.5(typescript@5.4.5)(zod@3.23.8)
-      typescript: 5.4.5
-      viem: 2.13.6(typescript@5.4.5)(zod@3.23.8)
-      zustand: 4.4.1(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
     transitivePeerDependencies:
       - '@types/react'
       - bufferutil
@@ -5683,41 +5505,6 @@ packages:
       '@walletconnect/jsonrpc-types': 1.0.4
       '@walletconnect/jsonrpc-utils': 1.0.8
       '@walletconnect/modal': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-      '@walletconnect/sign-client': 2.13.0
-      '@walletconnect/types': 2.13.0
-      '@walletconnect/universal-provider': 2.13.0
-      '@walletconnect/utils': 2.13.0
-      events: 3.3.0
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - bufferutil
-      - encoding
-      - ioredis
-      - react
-      - uWebSockets.js
-      - utf-8-validate
-    dev: false
-
-  /@walletconnect/ethereum-provider@2.13.0(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-dnpW8mmLpWl1AZUYGYZpaAfGw1HFkL0WSlhk5xekx3IJJKn4pLacX2QeIOo0iNkzNQxZfux1AK4Grl1DvtzZEA==}
-    dependencies:
-      '@walletconnect/jsonrpc-http-connection': 1.0.8
-      '@walletconnect/jsonrpc-provider': 1.0.14
-      '@walletconnect/jsonrpc-types': 1.0.4
-      '@walletconnect/jsonrpc-utils': 1.0.8
-      '@walletconnect/modal': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
       '@walletconnect/sign-client': 2.13.0
       '@walletconnect/types': 2.13.0
       '@walletconnect/universal-provider': 2.13.0
@@ -5864,31 +5651,10 @@ packages:
       - react
     dev: false
 
-  /@walletconnect/modal-core@2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-cv8ibvdOJQv2B+nyxP9IIFdxvQznMz8OOr/oR/AaUZym4hjXNL/l1a2UlSQBXrVjo3xxbouMxLb3kBsHoYP2CA==}
-    dependencies:
-      valtio: 1.11.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-    transitivePeerDependencies:
-      - '@types/react'
-      - react
-    dev: false
-
   /@walletconnect/modal-ui@2.6.2(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524):
     resolution: {integrity: sha512-rbdstM1HPGvr7jprQkyPggX7rP4XiCG85ZA+zWBEX0dVQg8PpAgRUqpeub4xQKDgY7pY/xLRXSiCVdWGqvG2HA==}
     dependencies:
       '@walletconnect/modal-core': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-      lit: 2.8.0
-      motion: 10.16.2
-      qrcode: 1.5.3
-    transitivePeerDependencies:
-      - '@types/react'
-      - react
-    dev: false
-
-  /@walletconnect/modal-ui@2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-rbdstM1HPGvr7jprQkyPggX7rP4XiCG85ZA+zWBEX0dVQg8PpAgRUqpeub4xQKDgY7pY/xLRXSiCVdWGqvG2HA==}
-    dependencies:
-      '@walletconnect/modal-core': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
       lit: 2.8.0
       motion: 10.16.2
       qrcode: 1.5.3
@@ -5902,16 +5668,6 @@ packages:
     dependencies:
       '@walletconnect/modal-core': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
       '@walletconnect/modal-ui': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-    transitivePeerDependencies:
-      - '@types/react'
-      - react
-    dev: false
-
-  /@walletconnect/modal@2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-eFopgKi8AjKf/0U4SemvcYw9zlLpx9njVN8sf6DAkowC2Md0gPU/UNEbH1Wwj407pEKnEds98pKWib1NN1ACoA==}
-    dependencies:
-      '@walletconnect/modal-core': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@walletconnect/modal-ui': 2.6.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
     transitivePeerDependencies:
       - '@types/react'
       - react
@@ -6161,17 +5917,6 @@ packages:
       - react
     dev: false
 
-  /@web3modal/core@4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-UykKZTELBpb6ey+IV6fkHWsLkjrIdILmRYzhlznyTPbm9qX5pOR9tH0Z3QGUo7YPFmUqMRH1tC9Irsr3SgIbbw==}
-    dependencies:
-      '@web3modal/common': 4.2.3
-      '@web3modal/wallet': 4.2.3
-      valtio: 1.11.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-    transitivePeerDependencies:
-      - '@types/react'
-      - react
-    dev: false
-
   /@web3modal/polyfills@4.2.3:
     resolution: {integrity: sha512-RiGxh2hMLSD1s2aTjoejNK/UL377CJhGf5tzmdF1m5xsYHpil+Dnulpio8Yojnm27cOqQD+QiaYUKnHOxErLjQ==}
     dependencies:
@@ -6210,55 +5955,12 @@ packages:
       - uWebSockets.js
     dev: false
 
-  /@web3modal/scaffold-react@4.2.3(@types/react@18.3.3)(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-WRA244mO3qa9wnJtRa+mfXHkfW92VEkEt+HagLQuUcSRTQJH0Q95UF+EXZZ/r1mKbqdqIbpguewuF0dRtL/YrQ==}
-    peerDependencies:
-      react: '>=17'
-      react-dom: '>=17'
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@web3modal/scaffold': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-dom: 19.0.0-rc-9c6806964f-20240703(react@19.0.0-rc-9c6806964f-20240703)
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - ioredis
-      - uWebSockets.js
-    dev: false
-
   /@web3modal/scaffold-utils@4.2.3(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524):
     resolution: {integrity: sha512-z6t0ggYg1/8hpaKHUm77z2VyacjIZEZTI8IHSQYmHuRFGu5oDPJeAr1thr475JXdoGLYr08hwquZyed/ZINAvw==}
     dependencies:
       '@web3modal/core': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
       '@web3modal/polyfills': 4.2.3
       valtio: 1.11.2(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-    transitivePeerDependencies:
-      - '@types/react'
-      - react
-    dev: false
-
-  /@web3modal/scaffold-utils@4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-z6t0ggYg1/8hpaKHUm77z2VyacjIZEZTI8IHSQYmHuRFGu5oDPJeAr1thr475JXdoGLYr08hwquZyed/ZINAvw==}
-    dependencies:
-      '@web3modal/core': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/polyfills': 4.2.3
-      valtio: 1.11.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
     transitivePeerDependencies:
       - '@types/react'
       - react
@@ -6273,34 +5975,6 @@ packages:
         optional: true
     dependencies:
       '@web3modal/scaffold': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - ioredis
-      - react
-      - uWebSockets.js
-    dev: false
-
-  /@web3modal/scaffold-vue@4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-0mlx/t0A7srcuFcxP3xuUt2ACFUUcAhyRIsNImtQHPq7QHx7i5zvabQ38iplDsWS0TA7j83hW5gxHycppa5PXg==}
-    peerDependencies:
-      vue: '>=3'
-    peerDependenciesMeta:
-      vue:
-        optional: true
-    dependencies:
-      '@web3modal/scaffold': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6348,34 +6022,6 @@ packages:
       - uWebSockets.js
     dev: false
 
-  /@web3modal/scaffold@4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-8K+IV+luDUvppKgmlgdA+RbQGT2STdRrgHVHFRsAqsORFoLiIYvlrpQlxvV7J5Xc1bgKEn3KvEXC+BH2NMqF4w==}
-    dependencies:
-      '@web3modal/common': 4.2.3
-      '@web3modal/core': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/siwe': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/ui': 4.2.3
-      '@web3modal/wallet': 4.2.3
-      lit: 3.1.0
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - ioredis
-      - react
-      - uWebSockets.js
-    dev: false
-
   /@web3modal/siwe@4.2.3(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524):
     resolution: {integrity: sha512-uPma0U/OxAy3LwnF7pCYYX8tn+ONBYNcssuVZxEGsusJD1kF4ueS8lK7eyQogyK5nXqOGdNESOjY1NImNNjMVw==}
     dependencies:
@@ -6384,33 +6030,6 @@ packages:
       '@web3modal/scaffold-utils': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
       lit: 3.1.0
       valtio: 1.11.2(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - ioredis
-      - react
-      - uWebSockets.js
-    dev: false
-
-  /@web3modal/siwe@4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-uPma0U/OxAy3LwnF7pCYYX8tn+ONBYNcssuVZxEGsusJD1kF4ueS8lK7eyQogyK5nXqOGdNESOjY1NImNNjMVw==}
-    dependencies:
-      '@walletconnect/utils': 2.12.0
-      '@web3modal/core': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/scaffold-utils': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      lit: 3.1.0
-      valtio: 1.11.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6465,56 +6084,6 @@ packages:
       '@web3modal/siwe': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
       react: 19.0.0-rc-935180c7e0-20240524
       react-dom: 19.0.0-rc-935180c7e0-20240524(react@19.0.0-rc-935180c7e0-20240524)
-      viem: 2.13.6(typescript@5.4.5)(zod@3.23.8)
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - bufferutil
-      - encoding
-      - ioredis
-      - uWebSockets.js
-      - utf-8-validate
-    dev: false
-
-  /@web3modal/wagmi@4.2.3(@types/react@18.3.3)(@wagmi/connectors@5.0.7)(@wagmi/core@2.10.5)(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)(viem@2.13.6):
-    resolution: {integrity: sha512-oisBCMrOYn8TBgNaSPrumvMmTGox6+3Ii92zxQJalW5U/K9iBTxoejHT033Ss7mFEFybilcfXBAvGNFXfQmtkA==}
-    peerDependencies:
-      '@wagmi/connectors': '>=4'
-      '@wagmi/core': '>=2.0.0'
-      react: '>=17'
-      react-dom: '>=17'
-      viem: '>=2.0.0'
-      vue: '>=3'
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      '@wagmi/connectors': 5.0.7(@types/react@18.3.3)(@wagmi/core@2.10.5)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8)
-      '@wagmi/core': 2.10.5(@tanstack/query-core@5.40.0)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8)
-      '@walletconnect/ethereum-provider': 2.13.0(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/polyfills': 4.2.3
-      '@web3modal/scaffold': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/scaffold-react': 4.2.3(@types/react@18.3.3)(react-dom@19.0.0-rc-9c6806964f-20240703)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/scaffold-utils': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/scaffold-vue': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      '@web3modal/siwe': 4.2.3(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-dom: 19.0.0-rc-9c6806964f-20240703(react@19.0.0-rc-9c6806964f-20240703)
       viem: 2.13.6(typescript@5.4.5)(zod@3.23.8)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -11617,27 +11186,6 @@ packages:
       react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
     dev: false
 
-  /react-i18next@13.5.0(i18next@22.5.1)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-CFJ5NDGJ2MUyBohEHxljOq/39NQ972rh1ajnadG9BjTk+UXbHLq4z5DKEbEQBDoIhUmmbuS/fIMJKo6VOax1HA==}
-    peerDependencies:
-      i18next: '>= 23.2.3'
-      react: '>= 16.8.0'
-      react-dom: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.24.6
-      html-parse-stringify: 3.0.1
-      i18next: 22.5.1
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-dom: 19.0.0-rc-9c6806964f-20240703(react@19.0.0-rc-9c6806964f-20240703)
-      react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
-    dev: false
-
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -11659,18 +11207,6 @@ packages:
       invariant: 2.2.4
       react: 19.0.0-rc-935180c7e0-20240524
       react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524)
-    dev: false
-
-  /react-native-webview@11.26.1(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-hC7BkxOpf+z0UKhxFSFTPAM4shQzYmZHoELa6/8a/MspcjEP7ukYKpuSUTLDywQditT8yI9idfcKvfZDKQExGw==}
-    peerDependencies:
-      react: '*'
-      react-native: '*'
-    dependencies:
-      escape-string-regexp: 2.0.0
-      invariant: 2.2.4
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-native: 0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)
     dev: false
 
   /react-native@0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-935180c7e0-20240524):
@@ -11717,65 +11253,6 @@ packages:
       react-devtools-core: 5.2.0
       react-refresh: 0.14.2
       react-shallow-renderer: 16.15.0(react@19.0.0-rc-935180c7e0-20240524)
-      regenerator-runtime: 0.13.11
-      scheduler: 0.24.0-canary-efb381bbf-20230505
-      stacktrace-parser: 0.1.10
-      whatwg-fetch: 3.6.20
-      ws: 6.2.2
-      yargs: 17.7.2
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/preset-env'
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
-    dev: false
-
-  /react-native@0.74.2(@babel/core@7.24.6)(@babel/preset-env@7.24.6)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-EBMBjPPL4/GjHMP4NqsZabT3gI5WU9cSmduABGAGrd8uIcmTZ5F2Ng9k6gFmRm7n8e8CULxDNu98ZpQfBjl7Bw==}
-    engines: {node: '>=18'}
-    hasBin: true
-    peerDependencies:
-      '@types/react': ^18.2.6
-      react: 18.2.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@jest/create-cache-key-function': 29.7.0
-      '@react-native-community/cli': 13.6.8
-      '@react-native-community/cli-platform-android': 13.6.8
-      '@react-native-community/cli-platform-ios': 13.6.8
-      '@react-native/assets-registry': 0.74.84
-      '@react-native/codegen': 0.74.84(@babel/preset-env@7.24.6)
-      '@react-native/community-cli-plugin': 0.74.84(@babel/core@7.24.6)(@babel/preset-env@7.24.6)
-      '@react-native/gradle-plugin': 0.74.84
-      '@react-native/js-polyfills': 0.74.84
-      '@react-native/normalize-colors': 0.74.84
-      '@react-native/virtualized-lists': 0.74.84(@types/react@18.3.3)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)
-      '@types/react': 18.3.3
-      abort-controller: 3.0.0
-      anser: 1.4.10
-      ansi-regex: 5.0.1
-      base64-js: 1.5.1
-      chalk: 4.1.2
-      event-target-shim: 5.0.1
-      flow-enums-runtime: 0.0.6
-      invariant: 2.2.4
-      jest-environment-node: 29.7.0
-      jsc-android: 250231.0.0
-      memoize-one: 5.2.1
-      metro-runtime: 0.80.9
-      metro-source-map: 0.80.9
-      mkdirp: 0.5.6
-      nullthrows: 1.1.1
-      pretty-format: 26.6.2
-      promise: 8.3.0
-      react: 19.0.0-rc-9c6806964f-20240703
-      react-devtools-core: 5.2.0
-      react-refresh: 0.14.2
-      react-shallow-renderer: 16.15.0(react@19.0.0-rc-9c6806964f-20240703)
       regenerator-runtime: 0.13.11
       scheduler: 0.24.0-canary-efb381bbf-20230505
       stacktrace-parser: 0.1.10
@@ -11884,16 +11361,6 @@ packages:
     dependencies:
       object-assign: 4.1.1
       react: 19.0.0-rc-935180c7e0-20240524
-      react-is: 18.3.1
-    dev: false
-
-  /react-shallow-renderer@16.15.0(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA==}
-    peerDependencies:
-      react: ^16.0.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      object-assign: 4.1.1
-      react: 19.0.0-rc-9c6806964f-20240703
       react-is: 18.3.1
     dev: false
 
@@ -13621,24 +13088,6 @@ packages:
       use-sync-external-store: 1.2.0(react@19.0.0-rc-935180c7e0-20240524)
     dev: false
 
-  /valtio@1.11.2(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-1XfIxnUXzyswPAPXo1P3Pdx2mq/pIqZICkWN60Hby0d9Iqb+MEIpqgYVlbflvHdrp2YR/q3jyKWRPJJ100yxaw==}
-    engines: {node: '>=12.20.0'}
-    peerDependencies:
-      '@types/react': '>=16.8'
-      react: '>=16.8'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      react:
-        optional: true
-    dependencies:
-      '@types/react': 18.3.3
-      proxy-compare: 2.5.1
-      react: 19.0.0-rc-9c6806964f-20240703
-      use-sync-external-store: 1.2.0(react@19.0.0-rc-9c6806964f-20240703)
-    dev: false
-
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
@@ -13715,53 +13164,6 @@ packages:
       react: 19.0.0-rc-935180c7e0-20240524
       typescript: 5.4.5
       use-sync-external-store: 1.2.0(react@19.0.0-rc-935180c7e0-20240524)
-      viem: 2.13.6(typescript@5.4.5)(zod@3.23.8)
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@react-native-async-storage/async-storage'
-      - '@tanstack/query-core'
-      - '@types/react'
-      - '@upstash/redis'
-      - '@vercel/kv'
-      - bufferutil
-      - encoding
-      - immer
-      - ioredis
-      - react-dom
-      - react-i18next
-      - react-native
-      - rollup
-      - supports-color
-      - uWebSockets.js
-      - utf-8-validate
-      - zod
-    dev: false
-
-  /wagmi@2.9.8(@tanstack/query-core@5.40.0)(@tanstack/react-query@5.40.1)(@types/react@18.3.3)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8):
-    resolution: {integrity: sha512-uSfYKB0JWtajz8YSntMBO4QQolx1fPPckwAVrRl9X66zQb0FLqgZeXrnf+PjFnmNbNsSyO3neOD/3TQqNL6m4Q==}
-    peerDependencies:
-      '@tanstack/react-query': '>=5.0.0'
-      react: '>=18'
-      typescript: '>=5.0.4'
-      viem: 2.x
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@tanstack/react-query': 5.40.1(react@19.0.0-rc-9c6806964f-20240703)
-      '@wagmi/connectors': 5.0.7(@types/react@18.3.3)(@wagmi/core@2.10.5)(react-dom@19.0.0-rc-9c6806964f-20240703)(react-i18next@13.5.0)(react-native@0.74.2)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8)
-      '@wagmi/core': 2.10.5(@tanstack/query-core@5.40.0)(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703)(typescript@5.4.5)(viem@2.13.6)(zod@3.23.8)
-      react: 19.0.0-rc-9c6806964f-20240703
-      typescript: 5.4.5
-      use-sync-external-store: 1.2.0(react@19.0.0-rc-9c6806964f-20240703)
       viem: 2.13.6(typescript@5.4.5)(zod@3.23.8)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -14106,26 +13508,6 @@ packages:
       '@types/react': 18.3.3
       react: 19.0.0-rc-935180c7e0-20240524
       use-sync-external-store: 1.2.0(react@19.0.0-rc-935180c7e0-20240524)
-    dev: false
-
-  /zustand@4.4.1(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):
-    resolution: {integrity: sha512-QCPfstAS4EBiTQzlaGP1gmorkh/UL1Leaj2tdj+zZCZ/9bm0WS7sI2wnfD5lpOszFqWJ1DcPnGoY8RDL61uokw==}
-    engines: {node: '>=12.7.0'}
-    peerDependencies:
-      '@types/react': '>=16.8'
-      immer: '>=9.0'
-      react: '>=16.8'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      immer:
-        optional: true
-      react:
-        optional: true
-    dependencies:
-      '@types/react': 18.3.3
-      react: 19.0.0-rc-9c6806964f-20240703
-      use-sync-external-store: 1.2.0(react@19.0.0-rc-9c6806964f-20240703)
     dev: false
 
   /zustand@4.5.4(@types/react@18.3.3)(react@19.0.0-rc-9c6806964f-20240703):

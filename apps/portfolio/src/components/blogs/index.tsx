@@ -33,7 +33,7 @@ export const Blogs = () => {
     setScrollProgress(value * 2000);
   });
   return (
-    <div ref={ref} className='relative z-[2] h-fit md:h-[200dvh]'>
+    <div ref={ref} className='relative z-[2] h-fit md:h-[200dvh]' id='articles'>
       <div className='top-0 overflow-hidden md:sticky md:h-screen'>
         <div className='flex h-full flex-col px-3 md:flex-row lg:flex-row'>
           <BlogTitle scrollProgress={scrollProgress} />

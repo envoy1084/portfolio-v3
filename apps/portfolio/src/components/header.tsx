@@ -40,18 +40,18 @@ export const Header = () => {
 
   if (init && options) {
     return (
-      <div className='px-3 lg:px-0'>
+      <div className='z-[0] px-3 lg:px-0'>
         <div className='relative mx-auto my-[10rem] min-h-[112px] w-full max-w-5xl'>
-          <Image
-            alt='Header'
-            className='z-0 w-full'
-            src={HeaderImage as unknown as string}
-          />
           <Particles
             className='particle-mask absolute left-0 top-0 z-[-1] w-full overflow-clip'
             id='tsparticles'
             options={options}
             particlesLoaded={particlesLoaded}
+          />
+          <Image
+            alt='Header'
+            className='absolute z-[-1] w-full'
+            src={HeaderImage as unknown as string}
           />
         </div>
       </div>
