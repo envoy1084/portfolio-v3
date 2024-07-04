@@ -19,10 +19,7 @@ export interface Data {
   articles: {
     title: string;
     description: string;
-    articles: {
-      image: StaticImageData | string;
-      link: string;
-    }[];
+    hashnodeHostname: string;
   };
   projects: {
     title: string;

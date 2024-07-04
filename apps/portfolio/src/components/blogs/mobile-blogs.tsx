@@ -1,6 +1,7 @@
 'use clients';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import React from 'react';
 
@@ -20,9 +21,11 @@ export const MobileBlogs = (props: MobileBlogsProps) => {
       <div className='flex flex-col gap-8'>
         {posts.map((article) => {
           return (
-            <div
+            <Link
               key={article.title}
               className='flex aspect-portrait w-full max-w-[300px] flex-col gap-3 rounded-2xl border px-2 py-3'
+              href={article.url}
+              target='_blank'
             >
               <div className='aspect-og w-full rounded-xl'>
                 <Image
@@ -34,7 +37,7 @@ export const MobileBlogs = (props: MobileBlogsProps) => {
                 />
               </div>
               <div className='py-2 text-center text-xl'>{article.title}</div>
-            </div>
+            </Link>
           );
         })}
       </div>

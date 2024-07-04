@@ -1,3 +1,5 @@
+import { data } from '~/lib/data';
+
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -47,6 +49,7 @@ export const errorHandler = (error: unknown) => {
 
 export interface Post {
   title: string;
+  url: string;
   coverImage: { url: string; attribution: string | null };
 }
 
@@ -54,11 +57,12 @@ export const getPosts = async () => {
   try {
     const query = `
     query GetPosts {
-      publication(host: "blog.envoy1084.xyz") {
+      publication(host: "${data.articles.hashnodeHostname}") {
         posts(first: 20) {
           edges {
             node {
               title
+              url
               coverImage {
                 url
                 attribution
@@ -78,13 +82,14 @@ export const getPosts = async () => {
       body: JSON.stringify({ query }),
     });
 
-    const data = (await res.json()) as {
+    const posts = (await res.json()) as {
       data: {
         publication: {
           posts: {
             edges: {
               node: {
                 title: string;
+                url: string;
                 coverImage: { url: string; attribution: string | null };
               };
             }[];
@@ -93,7 +98,7 @@ export const getPosts = async () => {
       };
     };
 
-    return data.data.publication.posts.edges.map(({ node }) => node);
+    return posts.data.publication.posts.edges.map(({ node }) => node);
   } catch (error) {
     console.log({ error });
     return [];

@@ -191,30 +191,23 @@ I'm currently working on a Battleship Game on Nillion Network which uses Secure 
   articles: {
     title: 'Articles',
     description: `I have been writing articles for a while now on various web3 protocols and even project builds. These articles are a mix of tutorials, guides, and project breakdowns. I hope you find them helpful.`,
-    articles: [
-      ...Array(12)
-        .fill(true)
-        .map((_, i) => ({
-          link: ``,
-          image: `https://picsum.photos/300/420?id=${String(i)}`,
-        })),
-    ],
+    hashnodeHostname: 'blog.envoy1084.xyz',
   },
   projects: {
     title: 'Projects',
     projects,
   },
   resume: {
-    description: `Long story short, I'm currently looking for a new project where I could step in on many different levels : content, social media, digital communication, design, and more!
+    description: `Long story short, I'm currently looking for a new opportunity to work on exciting projects. I am open to both full-time, part-time  and DevRel roles.
 
-You'd like to work with someone who's passionate, experienced, polyvalent, constantly learning, and who knows the internet like the back of his hand? 👋
+You'd like to work with someone who's passionate, experienced, polyvalent, constantly learning, and quickly adjust with new technologies and tools.
 
 So here's a little recap of everything you've seen in A4:`,
     website: 'https://envoy1084.xyz',
     name: 'Vedant Chainani',
     position: 'Fullstack Developer',
     email: 'vedantchainani1084@gmail.com',
-    downloadLink: 'https://x.com/Envoy_1084',
+    downloadLink: '/resume.pdf',
   },
   contact: {
     links: [

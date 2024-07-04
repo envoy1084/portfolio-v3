@@ -40,6 +40,7 @@ export const Resume = () => {
           download
           className='absolute bottom-0 right-1/2 translate-x-1/2 text-xs uppercase text-white opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 md:bottom-12 md:text-lg'
           href={data.resume.downloadLink}
+          target='_blank'
         >
           Download My Resume
         </Link>

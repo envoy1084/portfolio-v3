@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import React from 'react';
 
@@ -26,9 +27,11 @@ export const DesktopBlogs = ({ scrollProgress, posts }: DesktopBlogsProps) => {
       >
         {group1.map((article) => {
           return (
-            <div
+            <Link
               key={article.title}
               className='flex aspect-portrait w-full max-w-[300px] flex-col gap-3 rounded-2xl border px-2 py-3'
+              href={article.url}
+              target='_blank'
             >
               <div className='aspect-og w-full rounded-xl'>
                 <Image
@@ -40,7 +43,7 @@ export const DesktopBlogs = ({ scrollProgress, posts }: DesktopBlogsProps) => {
                 />
               </div>
               <div className='py-2 text-center text-xl'>{article.title}</div>
-            </div>
+            </Link>
           );
         })}
       </div>
@@ -52,9 +55,11 @@ export const DesktopBlogs = ({ scrollProgress, posts }: DesktopBlogsProps) => {
       >
         {group2.map((article) => {
           return (
-            <div
+            <Link
               key={article.title}
               className='flex aspect-portrait w-full max-w-[300px] flex-col gap-3 rounded-2xl border px-2 py-3'
+              href={article.url}
+              target='_blank'
             >
               <div className='aspect-og w-full rounded-xl'>
                 <Image
@@ -66,7 +71,7 @@ export const DesktopBlogs = ({ scrollProgress, posts }: DesktopBlogsProps) => {
                 />
               </div>
               <div className='py-2 text-center text-xl'>{article.title}</div>
-            </div>
+            </Link>
           );
         })}
       </div>
