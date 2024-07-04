@@ -1,22 +1,19 @@
 'use client';
 
-/* eslint-disable @next/next/no-img-element -- test */
+import Image from 'next/image';
+
 import React from 'react';
 
-import { data } from '~/lib/data';
+import { type Post } from '~/lib/utils';
 
 interface DesktopBlogsProps {
   scrollProgress: number;
+  posts: Post[];
 }
 
-export const DesktopBlogs = ({ scrollProgress }: DesktopBlogsProps) => {
-  const group1 = data.articles.articles.slice(
-    0,
-    data.articles.articles.length / 2
-  );
-  const group2 = data.articles.articles.slice(
-    data.articles.articles.length / 2
-  );
+export const DesktopBlogs = ({ scrollProgress, posts }: DesktopBlogsProps) => {
+  const group1 = posts.slice(0, posts.length / 2);
+  const group2 = posts.slice(posts.length / 2);
   return (
     <div className='relative hidden w-full basis-3/5 flex-row justify-center gap-12 md:flex'>
       <div className='carousel-grad carousel-grad-top z-[4]' />
@@ -29,12 +26,20 @@ export const DesktopBlogs = ({ scrollProgress }: DesktopBlogsProps) => {
       >
         {group1.map((article) => {
           return (
-            <div key={article.image as string} className='rounded-2xl'>
-              <img
-                alt='Test'
-                className='aspect-portrait w-[300px] rounded-2xl object-cover'
-                src={article.image as string}
-              />
+            <div
+              key={article.title}
+              className='flex aspect-portrait w-full max-w-[300px] flex-col gap-3 rounded-2xl border px-2 py-3'
+            >
+              <div className='aspect-og w-full rounded-xl'>
+                <Image
+                  alt={article.title}
+                  className='w-full rounded-xl object-cover'
+                  height={150}
+                  src={article.coverImage.url}
+                  width={300}
+                />
+              </div>
+              <div className='py-2 text-center text-xl'>{article.title}</div>
             </div>
           );
         })}
@@ -47,12 +52,20 @@ export const DesktopBlogs = ({ scrollProgress }: DesktopBlogsProps) => {
       >
         {group2.map((article) => {
           return (
-            <div key={article.image as string} className='rounded-2xl'>
-              <img
-                alt='Test'
-                className='aspect-portrait w-[300px] rounded-2xl object-cover'
-                src={article.image as string}
-              />
+            <div
+              key={article.title}
+              className='flex aspect-portrait w-full max-w-[300px] flex-col gap-3 rounded-2xl border px-2 py-3'
+            >
+              <div className='aspect-og w-full rounded-xl'>
+                <Image
+                  alt={article.title}
+                  className='w-full rounded-xl object-cover'
+                  height={150}
+                  src={article.coverImage.url}
+                  width={300}
+                />
+              </div>
+              <div className='py-2 text-center text-xl'>{article.title}</div>
             </div>
           );
         })}

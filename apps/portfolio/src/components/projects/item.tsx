@@ -109,8 +109,6 @@ export const ProjectItem = ({
       <Image
         alt={title}
         height={600}
-        loading='lazy'
-        placeholder='blur'
         src={active === index ? image : coverImage}
         width={600}
         className={cn(

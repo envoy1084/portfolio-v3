@@ -44,3 +44,58 @@ export const errorHandler = (error: unknown) => {
   }
   return 'An error occurred';
 };
+
+export interface Post {
+  title: string;
+  coverImage: { url: string; attribution: string | null };
+}
+
+export const getPosts = async () => {
+  try {
+    const query = `
+    query GetPosts {
+      publication(host: "blog.envoy1084.xyz") {
+        posts(first: 20) {
+          edges {
+            node {
+              title
+              coverImage {
+                url
+                attribution
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+    const res = await fetch('https://gql.hashnode.com/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query }),
+    });
+
+    const data = (await res.json()) as {
+      data: {
+        publication: {
+          posts: {
+            edges: {
+              node: {
+                title: string;
+                coverImage: { url: string; attribution: string | null };
+              };
+            }[];
+          };
+        };
+      };
+    };
+
+    return data.data.publication.posts.edges.map(({ node }) => node);
+  } catch (error) {
+    console.log({ error });
+    return [];
+  }
+};
