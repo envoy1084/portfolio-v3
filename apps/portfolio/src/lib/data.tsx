@@ -197,19 +197,19 @@ You'd like to work with someone who's passionate, experienced, polyvalent, const
 So here's a little recap of everything you've seen in A4:`,
 		website: "https://envoy1084.xyz",
 		name: "Vedant Chainani",
-		position: "Fullstack Developer",
-		email: "vedantchainani1084@gmail.com",
+		position: "Full-stack Developer",
+		email: "vedant@envoy1084.xyz",
 		downloadLink: "/resume.pdf",
 	},
 	contact: {
 		links: [
 			{
 				title: "Email",
-				link: "mailto:vedantchainani1084@gmail.com",
+				link: "mailto:vedant@envoy1084.xyz",
 			},
 			{
 				title: "Twitter",
-				link: "https://x.com/Envoy_1084",
+				link: "https://x.com/envoy1084",
 			},
 			{
 				title: "Linkedin",
@@ -217,7 +217,7 @@ So here's a little recap of everything you've seen in A4:`,
 			},
 			{
 				title: "Github",
-				link: "https://github.com/Envoy-VC",
+				link: "https://github.com/envoy1084",
 			},
 		],
 	},
